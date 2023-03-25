@@ -5,7 +5,7 @@ import Chat from './Chat'
 
 import { StyledLogin, StyledLoginForm, StyledInput, StyledButton } from './App.styled';
 
-const socket = io.connect("https://drab-cyan-scorpion-kit.cyclic.app");
+const socket = io.connect("https://react-midterm-server.onrender.com");
 
 function App() {
   const [username, setUsername] = useState("");
