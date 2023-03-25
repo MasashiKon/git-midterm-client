@@ -22,6 +22,10 @@ function Chat({socket, username, room}) {
             const checkKeyWord = currentMessage.replaceAll(/\W/g, "");
             
             if(checkKeyWord.toLowerCase().includes("whatdoyouthinkowl")) {
+                setOwlState("awake");
+                setTimeout(() => {
+                    setOwlState('sleep');
+                }, 5000)
                 messageData = {
                     room,
                     author: username,
